@@ -1,23 +1,28 @@
-from django.shortcuts import render
-from .models import Product, Sale, Stock, User, Offer
-from .serializers import ProductSerializer, SaleSerializer, StockSerializer, UserSerializer, OfferSerializer
+from rest_framework import viewsets
+from .models import Produto, Venda, Estoque, Usuario, Oferta
+from .serializers import ProdutoSerializer, VendaSerializer, EstoqueSerializer, UsuarioSerializer, OfertaSerializer
 
-class ProductViewSet(viewsets.ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+# ViewSet para Produtos
+class ProdutoViewSet(viewsets.ModelViewSet):
+    queryset = Produto.objects.all()
+    serializer_class = ProdutoSerializer
 
-class SaleViewSet(viewsets.ModelViewSet):
-    queryset = Sale.objects.all()
-    serializer_class = SaleSerializer
+# ViewSet para Vendas
+class VendaViewSet(viewsets.ModelViewSet):
+    queryset = Venda.objects.all()
+    serializer_class = VendaSerializer
 
-class StockViewSet(viewsets.ModelViewSet):
-    queryset = Stock.objects.all()
-    serializer_class = StockSerializer
+# ViewSet para Estoque
+class EstoqueViewSet(viewsets.ModelViewSet):
+    queryset = Estoque.objects.all()
+    serializer_class = EstoqueSerializer
 
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+# ViewSet para Usuários
+class UsuarioViewSet(viewsets.ModelViewSet):
+    queryset = Usuario.objects.all()
+    serializer_class = UsuarioSerializer
 
-class OfferViewSet(viewsets.ModelViewSet):
-    queryset = Offer.objects.all()
-    serializer_class = OfferSerializer
+# ViewSet para Ofertas
+class OfertaViewSet(viewsets.ModelViewSet):
+    queryset = Oferta.objects.all()
+    serializer_class = OfertaSerializer
