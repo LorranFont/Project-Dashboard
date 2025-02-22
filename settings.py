@@ -78,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dashboard_db',
-        'USER': 'seu_usuario',
-        'PASSWORD': 'sua_senha',
+        'USER': 'lorran',
+        'PASSWORD': '0202',
         'HOST': 'localhost',
         'PORT': '3306',
     }
