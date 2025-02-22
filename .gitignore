@@ -1,0 +1,27 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Django
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ambiente virtual
+venv/
+.env
+
+# Outros arquivos
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+
+# Pytest
+.cache/
